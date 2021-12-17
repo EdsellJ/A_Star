@@ -12,19 +12,19 @@ If you would like to test it with a smaller maze so it is easier to follow the p
  - `./a.out`
 
 Output should look somethign like this:
-`
-#######
-#o    #
-# # ###
-# #   #
-# # ###
-# #  x#
-#######
-The destination cell is found
 
-The Path is -> (1,1) -> (1,2) -> (1,3) -> (2,3) -> (3,3) -> (4,3) -> (5,3) -> (5,4) -> (5,5) 
-A* took 69 microseconds without threading.
-`
+> #######
+> #o    #
+> # # ###
+> # #   #
+> # # ###
+> # #  x#
+> #######
+> The destination cell is found
+> 
+> The Path is -> (1,1) -> (1,2) -> (1,3) -> (2,3) -> (3,3) -> (4,3) -> (5,3) -> (5,4) -> (5,5) 
+> A* took 69 microseconds without threading.  
+
 
 ## Multiprocessing and Threading
 Move back a directory and cd into Threaded. Here I have made a script that will simultaneously build 10 mazes at once (it will slam your CPU, check out top while running).  Running `sh multiMaze.sh` will build the c++ program, create ten mazes, solve all ten mazes, both one at a time and then all at once with threading and compare the times. The path here will look strange and make no sense due to the threads solving simultaneously.  
@@ -35,4 +35,4 @@ If you would simply like to test out creating the ten mazes with the python scri
 ![no multiprocessing](.images/no_multi.png)  
 
 **building mazes with multiprocessing**
-![with multiprocessing](.images/multi.png)
+![with multiprocessing](.images/multi.png)  
