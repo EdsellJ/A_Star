@@ -11,14 +11,14 @@ If you would like to test it with a smaller maze so it is easier to follow the p
  - `g++ main.cpp`
  - `./a.out`
 
-Output should look somethign like this:
+Output should look something like this:
 
 > \#\#\#\#\#\#\#  
-> \#o    \#  
-> \# \# \#\#\#  
-> \# \#   \#  
-> \# \# \#\#\#  
-> \# \#  x\#  
+> \#o         \#  
+> \#  \#  \#\#\#  
+> \#  \#      \#  
+> \#  \#  \#\#\#  
+> \#  \#     x\#  
 > \#\#\#\#\#\#\#  
 > The destination cell is found
 > 
