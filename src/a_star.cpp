@@ -9,13 +9,16 @@ using namespace std;
  
 class AStar{
     public:
+        //row and column variables
+        int rows = ROW;
+        int columns = COL;
         // Creating a shortcut for int, int pair type
         typedef pair<int, int> Pair;
         
         // Creating a shortcut for pair<int, pair<int, int>> type
         typedef pair<double, pair<int, int> > pPair;
 
-        //astar function
+        //astar function --- defined later
         void aStarSearch(int grid[][COL], Pair src, Pair dest);
     
     private:
@@ -404,50 +407,3 @@ class AStar{
         return;
     }
 
-
-void defineGrid(int grd[ROW][COL]){
-    //open file input stream
-    ifstream fin ("maze", ios::in);
-
-    string line;
-    int charpos = 0;
-    int row = 0, col = 0;
-
-    //convert '#' and ' ' to 0's and 1's
-    while(getline(fin, line)){
-        cout << line << endl;
-        while (line[charpos] != '\0'){
-            if (line[charpos] == '#'){
-                grd[row][col] = 0;
-            } 
-            else {
-                grd[row][col] = 1;
-            }
-            col++;
-            charpos++;
-        }
-        row++;
-        col = 0;
-        charpos = 0;
-    }
-    fin.close();
-}
-
-// Driver program to test above function
-int main()
-{
-    //initialize and define grid
-    int grid [ROW][COL] = {0};
-    defineGrid(grid);
-    
-    AStar search;
-    // Source is the left-most bottom-most corner
-    AStar::Pair src = make_pair(1, 1);
- 
-    // Destination is the left-most top-most corner
-    AStar::Pair dest = make_pair(ROW-2, COL-2);
- 
-    search.aStarSearch(grid, src, dest);
-
-    return (0);
-}
