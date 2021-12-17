@@ -11,19 +11,9 @@ If you would like to test it with a smaller maze so it is easier to follow the p
  - `g++ main.cpp`
  - `./a.out`
 
-Output should look something like this:
+Output should look something like this:  
+![output](.images/output.png)  
 
-> \#\#\#\#\#\#\#  
-> \#o         \#  
-> \#  \#  \#\#\#  
-> \#  \#      \#  
-> \#  \#  \#\#\#  
-> \#  \#     x\#  
-> \#\#\#\#\#\#\#  
-> The destination cell is found
-> 
-> The Path is -> (1,1) -> (1,2) -> (1,3) -> (2,3) -> (3,3) -> (4,3) -> (5,3) -> (5,4) -> (5,5) 
-> A* took 69 microseconds without threading.  
 
 
 ## Multiprocessing and Threading
