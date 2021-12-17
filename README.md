@@ -13,13 +13,13 @@ If you would like to test it with a smaller maze so it is easier to follow the p
 
 Output should look somethign like this:
 
-> #######
-> #o    #
-> # # ###
-> # #   #
-> # # ###
-> # #  x#
-> #######
+> \#\#\#\#\#\#\#  
+> \#o    \#  
+> \# \# \#\#\#  
+> \# \#   \#  
+> \# \# \#\#\#  
+> \# \#  x\#  
+> \#\#\#\#\#\#\#  
 > The destination cell is found
 > 
 > The Path is -> (1,1) -> (1,2) -> (1,3) -> (2,3) -> (3,3) -> (4,3) -> (5,3) -> (5,4) -> (5,5) 
@@ -31,8 +31,8 @@ Move back a directory and cd into Threaded. Here I have made a script that will 
 
 If you would simply like to test out creating the ten mazes with the python script run `sh multiprocess.sh pythonCommands.txt`. This is kind of fun to see all of my cores go to nearly 100% utilization.  
 
-**building maze without multiprocessing**
+**building maze without multiprocessing**  
 ![no multiprocessing](.images/no_multi.png)  
 
-**building mazes with multiprocessing**
+**building mazes with multiprocessing**  
 ![with multiprocessing](.images/multi.png)  
