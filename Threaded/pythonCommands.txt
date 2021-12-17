@@ -1,0 +1,10 @@
+python rnd_maze.py 135 135 > mazes/maze0
+python rnd_maze.py 135 135 > mazes/maze1
+python rnd_maze.py 135 135 > mazes/maze2
+python rnd_maze.py 135 135 > mazes/maze3
+python rnd_maze.py 135 135 > mazes/maze4
+python rnd_maze.py 135 135 > mazes/maze5
+python rnd_maze.py 135 135 > mazes/maze6
+python rnd_maze.py 135 135 > mazes/maze7
+python rnd_maze.py 135 135 > mazes/maze8
+python rnd_maze.py 135 135 > mazes/maze9
