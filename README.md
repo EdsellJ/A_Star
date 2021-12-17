@@ -3,8 +3,8 @@ A_star algorithm designed to solve a python generated maze
 
 ## Where to begin
 To begin, cd into src, this is the initial maze solving program. Run `sh solveMaze.sh`, this will compile the c++, build a new maze, then solve the maze.  
-You can see how long it took to solve the maze and the path it took. You can run `./a_star.out` to see it solve the same maze again the time it takes to solve can vary.  
-If you would like to test it with a smaller maze so it is easier to follow the path do this: (my program only works with odd sized mazes due to a border issue with rnd_maze)  
+You can see how long it took to solve the maze and the path it took. You can run `./a_star.out` to see it solve the same maze again. Watch as time it takes to solve can vary.  
+If you would like to test it with a smaller maze so it is easier to follow the path do this: (my program only works with odd sized mazes due to a border issue with even sized mazes from rnd_maze.py)  
 
  - `python rnd_maze.py 5 5 > maze`  
  - Change line 7 and 8 of a_star.cpp to #define ROW 7 and #define COL 7 (must be 2 greater than the size of the maze)  
